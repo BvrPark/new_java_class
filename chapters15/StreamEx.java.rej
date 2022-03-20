@@ -1,0 +1,40 @@
+diff a/chapters15/StreamEx.java b/chapters15/StreamEx.java	(rejected hunks)
+@@ -0,0 +1,38 @@
++package chapters15;
++
++import java.io.IOException;
++import java.io.InputStream; //����ó��(���̳ʸ�)(byte)
++import java.io.InputStreamReader; //Reader������ ������ ����ó��(char)
++import java.io.OutputStream; //����ó��(���̳ʸ�)(byte)
++import java.io.Reader; //����ó��(char)
++import java.io.Writer; //����ó��(char)
++
++/**
++ * 
++ * ��Ʈ��(Stream) �������� �帧 in -> out 
++ * out -> in ������ �ܹ����� ������ ���� 
++ * read(); =>��������� �������� ������ ��ȯ�ϴ� ��(����Ʈ��)
++ * 
++ * ��Ʈ���� �ֻ��� => InputStream, OutputStream, Reader, Writer
++ * 
++ */
++
++public class StreamEx {
++
++	public static void main(String[] args) throws IOException {
++		InputStream s;
++		OutputStream o;
++		Reader r;
++		Writer w;
++
++		InputStreamReader rd = new InputStreamReader(System.in);
++		
++		while (true) {
++			int input = rd.read();
++				System.out.println(input);
++			
++		}
++
++	}
++
++}
